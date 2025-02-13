@@ -1,12 +1,14 @@
-import './App.css'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home"; // Import the Home page
 
 function App() {
-
   return (
-    <div className='flex justify-center items-center h-screen font-bold text-2xl text-center'>
-      Welcome to Hattingen CR App for Code Raccoon!
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
