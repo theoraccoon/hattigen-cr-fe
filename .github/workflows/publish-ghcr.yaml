@@ -8,10 +8,18 @@ on:
 jobs:
     build_and_publish:
         runs-on: ubuntu-latest
+
         steps:
-          - uses: actions/checkout@v3
-          - name: Build and push Docker image to GHCR
-            run: |
-                docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GH_PAT }}
-                docker build -t ghcr.io/${{ github.repository }}:latest .
-                docker push ghcr.io/${{ github.repository }}:latest
+          - name: Checkout repository
+            uses: actions/checkout@v3
+
+        #     # Build Docker image and push to GHCR
+        #   - name: Build and push Docker image to GHCR
+        #     run: |
+        #         docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GH_PAT }}
+        #         docker build -t ghcr.io/${{ github.repository }}:latest .
+        #         docker push ghcr.io/${{ github.repository }}:latest
+
+            # Deploy to Netlify
+          - name: Deploy to Netlify
+            run: curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
