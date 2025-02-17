@@ -1,5 +1,8 @@
 
 import React from "react";
+import LogoImage from "../assets/logo.png"; 
+import RaccoonImage from "../assets/raccoon-image.png"; 
+import GoogleImage from "../assets/google-icon.png"; 
 
 const LoginScreen: React.FC = () => {
   return (
@@ -9,7 +12,7 @@ const LoginScreen: React.FC = () => {
         {/* Logo & Text */}
         <div className="text-center">
           <img
-            src="src/assets/logo.png"
+            src={LogoImage}
             alt="Code Raccoon Logo"
             className="w-16 md:w-24 mx-auto  mt-8 mb-4 md:mb-8"
           />
@@ -20,7 +23,7 @@ const LoginScreen: React.FC = () => {
 
         <div className="relative md:absolute bottom-0 left-0 w-full h-56 md:h-2/3 mt-4 md:mt-0">
           <img
-            src="src/assets/raccoon-image.png"
+            src={RaccoonImage}
             alt="Raccoon holding resume"
             className="w-full h-full object-contain md:object-cover"
           />
@@ -34,7 +37,7 @@ const LoginScreen: React.FC = () => {
         </h2>
         <button className="mt-4 md:mt-6 flex items-center bg-black text-white px-5 md:px-8 py-3 md:py-4 rounded-lg shadow-md hover:bg-gray-800">
           <img
-            src="src/assets/google-icon.png"
+            src={GoogleImage}
             alt="Google Icon"
             className="w-5 md:w-7 h-5 md:h-7 mr-2"
           />
