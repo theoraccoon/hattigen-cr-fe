@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import ProtectedRoute from './ProtectedRoute';  // Import ProtectedRoute
 import LoginScreen from '../pages/Login';
 import Home from '../pages/Home';
+import FormPage from '../pages/FormPage';
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
 
       {/* Protected Routes */}
       <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+      <Route path="/form" element={<ProtectedRoute><FormPage/></ProtectedRoute>} />
 
 
       {/* Redirect unknown routes */}
