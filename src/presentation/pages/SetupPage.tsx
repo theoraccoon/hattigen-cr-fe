@@ -1,6 +1,6 @@
 // import PersonalInfoScreen from "../components/PersonalInfoScreen";
+import { useMultiStepForm } from "../../core/hooks/useMultiSteoForm";
 import Buttons from "../components/Buttons";
-import { useMultiStepForm } from "../Hooks/useMultiSteoForm";
 
 function Home() {
   const { step, next, previous, isFirstStep, isLastStep } = useMultiStepForm([
