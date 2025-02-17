@@ -4,14 +4,10 @@ import { useMultiStepForm } from "../Hooks/useMultiSteoForm";
 
 function Home() {
   const { step, next, previous, isFirstStep, isLastStep } = useMultiStepForm([
-    // <PersonalInfoScreen/>,
-    // <LanguagesScreen />,
-    // <FrameworksScreen onNext={() => next()} />,
-    // <DatabasesScreen onNext={() => next()} />,
-    // <CloudPlatformsScreen onNext={() => next()} />,
-    // <AIScreen onNext={() => next()} />,
-    // <UploadDocsScreen onNext={() => next()} />
-  ])
+    // Call your components here
+
+  ]); // Pass your components here
+
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-[#FFFFFF] overflow-x-hidden mx-[46px]">
         <form action="" className="flex flex-col w-full mt-40">
