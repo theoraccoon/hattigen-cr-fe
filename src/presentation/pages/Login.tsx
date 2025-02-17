@@ -1,8 +1,8 @@
 
 import React from "react";
-import LogoImage from "../assets/logo.png"; 
-import RaccoonImage from "../assets/raccoon-image.png"; 
-import GoogleImage from "../assets/google-icon.png"; 
+import LogoImage from "../../assets/logo.png"; 
+import RaccoonImage from "../../assets/raccoon-image.png"; 
+import GoogleImage from "../../assets/google-icon.png"; 
 
 const LoginScreen: React.FC = () => {
   return (
