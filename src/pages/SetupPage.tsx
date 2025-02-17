@@ -1,11 +1,12 @@
 // import PersonalInfoScreen from "../components/PersonalInfoScreen";
 import Buttons from "../components/Buttons";
+import ProfileInfo from "../components/ProfileInfo";
 import { useMultiStepForm } from "../Hooks/useMultiSteoForm";
 
 function Home() {
   const { step, next, previous, isFirstStep, isLastStep } = useMultiStepForm([
     // Call your components here
-
+    <ProfileInfo/>
   ]); // Pass your components here
 
   return (
