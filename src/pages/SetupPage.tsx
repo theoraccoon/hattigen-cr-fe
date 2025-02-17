@@ -6,7 +6,10 @@ import { useMultiStepForm } from "../Hooks/useMultiSteoForm";
 function Home() {
   const { step, next, previous, isFirstStep, isLastStep } = useMultiStepForm([
     // Call your components here
-    <ProfileInfo/>
+    <ProfileInfo/>,
+    <div>hw</div>
+    
+    
   ]); // Pass your components here
 
   return (
